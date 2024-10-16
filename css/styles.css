@@ -1,18 +1,20 @@
+/* Estilos globales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #1a1a1a; /* Fondo oscuro */
 }
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    color: #ffffff; /* Color de texto blanco */
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+    background-color: #2c2c2c; /* Fondo más claro para el header */
+    color: #ffffff; /* Color de texto blanco */
 }
 
 header nav {
@@ -23,6 +25,7 @@ header nav {
 
 header nav h1 {
     font-size: 2rem;
+    color: white; /* Color amarillo brillante */
 }
 
 header ul {
@@ -35,12 +38,12 @@ header ul li {
 }
 
 header ul li a {
-    color: white;
+    color: white; /* Color amarillo brillante */
     text-decoration: none;
 }
 
 .hero {
-    background-image: url('barberia.jpg'); /* Cambia esta URL por la imagen que desees */
+    background-image: url('barberia.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -57,7 +60,7 @@ header ul li a {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
+    color: transparent; /* Mantener el gradiente en el texto */
     align-items: center;
     font-family: "Roboto Condensed", sans-serif;
 }
@@ -65,10 +68,11 @@ header ul li a {
 .hero p {
     font-size: 1.5rem;
     margin: 20px 0;
+    color: white; /* Color amarillo brillante */
 }
 
 .boton {
-    background-color: #e67e22;
+    background-color: #ff5722; /* Color naranja vivo */
     display: flex;
     text-align: center;
     justify-content: center;
@@ -82,7 +86,7 @@ header ul li a {
 }
 
 .boton:hover {
-    background-color: #d35400;
+    background-color: #e64a19; /* Color naranja más oscuro */
 }
 
 .servicios, .sobre-nosotros, .contacto {
@@ -94,14 +98,13 @@ header ul li a {
     margin-bottom: 30px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
+footer * {
     text-align: center;
-    padding: 20px;
+    padding: 50px 20px;
+    background-color: #2c2c2c; /* Fondo más claro para el footer */
+    color: white; /* Color de texto blanco */
 }
 
-/* Estilos del formulario de agendar turno */
 .agendar-turno {
     padding: 50px 20px;
     text-align: center;
@@ -112,29 +115,33 @@ form {
     flex-direction: column;
     width: 50%;
     margin: 0 auto;
-    background-color: #f9f9f9;
+    background-color: #333; /* Fondo del formulario */
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 form label {
     text-align: left;
     margin-bottom: 10px;
     font-weight: bold;
-}
+    color: #ffffff;
+    background-color: #333;
+ }
 
 form input, form select {
     margin-bottom: 20px;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #666; /* Borde gris oscuro */
     border-radius: 5px;
+    background-color: #444; /* Fondo de campos de entrada */
+    color: #ffffff; /* Texto blanco en campos */
 }
 
 form input[type="submit"] {
-    background-color: #e67e22;
-    color: white;
+    background-color: #ff5722; /* Color naranja vivo */
+    color: white; /* Texto blanco en botón */
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -142,5 +149,5 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #d35400;
+    background-color: #e64a19; /* Color naranja más oscuro */
 }
