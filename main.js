@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = document.getElementById("email").value.trim();
         const fecha = document.getElementById("fecha").value;
         const horario = document.getElementById("horario").value;
+        const servicio = document.getElementById("servicio").value.trim();
 
         // Validar campos obligatorios
         if (nombre === "" || telefono === "" || fecha === "" || horario === "") {
@@ -21,9 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+        // Validar servicios
+        if (servicio === "") {
+            alert("Por favor, escoja un servicio.");
+        }
+
         // Validar número de teléfono (debe tener 10 dígitos)
-      //  if (!/^\d{10}$/.test(telefono))
-        if(telefono.length <= 10) {
+        //  if (!/^\d{10}$/.test(telefono))
+        if (telefono.length <= 10) {
             alert("El número de teléfono debe contener al menos 10 dígitos.");
             return;
         }
